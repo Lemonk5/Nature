@@ -1,0 +1,51 @@
+.row {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3rem;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+.col-1-of-2 {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.row-features {
+  display: flex;
+  margin: 0 10rem;
+  justify-content: space-evenly;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+.row--cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 5rem;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.colum-story {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
